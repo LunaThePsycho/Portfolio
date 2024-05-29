@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Vizi Brigitta - portfolio</title>
+</head>
+
+<body>
+    <div class="menu_bar">
+
+        <!--<img src="media/gblogo2.png" id="logo" class="menu_element" alt="Logo">-->
+        <button class="menu_choice menu_element" onclick="changePage(0)" id="main_page_button">
+            <p class="English def_hide">About me</p>
+            <p class="Hungarian">Rólam</p>
+        </button>
+        <button class="menu_choice menu_element" onclick="changePage(1)" id="whiskerwood_page_button">
+            <p class="English def_hide">Whiskerwood</p>
+            <p class="Hungarian">Whiskerwood</p>
+        </button>
+        <button class="menu_choice menu_element" onclick="changePage(2)" id="atlantis_page_button">
+            <p class="English def_hide">Atlantis</p>
+            <p class="Hungarian">Atlantisz</p>
+        </button>
+        <button class="menu_choice menu_element" onclick="changePage(3)" id="skull_page_button">
+            <p class="English def_hide">Skull</p>
+            <p class="Hungarian">Koponya</p>
+        </button>
+        <button class="menu_choice menu_element" onclick="changePage(4)" id="flanders_page_button">
+            <p class="English def_hide">In Flanders fields</p>
+            <p class="Hungarian">Flanders mezején</p>
+        </button>
+        <!--<button class="menu_choice menu_element lang_change" onclick="changeLang()" id="lang_change_button">
+            <p class="English def_hide">EN</p>
+            <p class="Hungarian">HU</p>
+        </button>-->
+    </div>
+
+
+    <div class="background">
+        <!--<div class="frame def_set-0 layout_margin">
+            <button class="func_button page_button prev to_left_side" onclick="changePage('prev')"></button>
+            <button class="func_button page_button next to_right_side" onclick="changePage('next')"></button>
+        </div>-->
+
+
+
+        <div class="page def_hide layout_margin" id="main_page">
+
+            <div class="full_page layout_margin" id="main_page_background"></div>
+
+            <div class="main_page_res_abt_container">
+
+                <div class="full_page layout_margin" id="main_page_about">
+                    <!--<h2 class="main_page_abt_title">Media Designer</h2>-->
+                    <img id="profile_img" src="resources/Profile_picture_cropped.png" alt="Introduction image">
+                    <!--<h2 class="main_page_abt_title">3D Artist</h2>-->
+                    <div id="profile_text">
+                        <h1 class="main_page_abt_name">Vizi Brigitta</h1>
+                        <h2 class="main_page_abt_title">Media Designer</h2>
+                        <h2 class="main_page_abt_title">3D Artist</h2>
+                    </div>
+                    
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="layout_margin" id="main_page_resume">
+                    <div class="resume_container">
+                        <div class="resume_entry">
+                            <img class="resume_entry_dot " src="resources/circle-solid.svg" alt="Metu logo">
+                            <img class="resume_entry_logo metu_logo" src="resources/metu_logo_hu.png" alt="Metu logo">
+                            <div class="resume_entry_description"> 
+                                <p>Budapest Metropolitan University</p>
+                                <p>Media Design </p>
+                                <p>BSc</p>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="resume_entry">
+                            <img class="resume_entry_dot " src="resources/circle-solid.svg" alt="Metu logo">
+                            <img class="resume_entry_logo metu_logo" src="resources/metu_logo_hu.png" alt="Metu logo">
+                            <div class="resume_entry_description"> 
+                                <p>Budapest Metropolitan University</p>
+                                <p>Media Design </p>
+                                <p>MSc</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="proficiencies_grid">
+                        <div class="grid-item" id="grid_item_1_1">
+                            <img class="proficiency_logo_small" id="unreal_logo" src="resources/UE-Icon-2023-White.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_1_2">
+                            <img class="proficiency_logo_small" id="blender_logo" src="resources/blender-seeklogo.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_1_3">
+                            <img class="proficiency_logo_small" id="maya_logo" src="resources/Autodesk Maya.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_2_1">
+                            <img class="proficiency_logo_small" id="app_logo" src="resources/premiere-pro-cc.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_2_2">
+                            <img class="proficiency_logo_small" id="aps_logo" src="resources/adobe-photoshop-seeklogo.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_2_3">
+                            <img class="proficiency_logo_small" id="aae_logo" src="resources/adobe-after-effects-icon.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_3_1">
+                            <img class="proficiency_logo_long" id="procreate_logo" src="resources/Procreate-Wordmark-White.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_3_2">
+                            <img class="proficiency_logo_small" id="arduino_logo" src="resources/arduino-seeklogo.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_4_1">
+                            <img class="proficiency_logo_small" id="illustrator_logo" src="resources/adobe-illustrator-seeklogo.svg">
+                        </div>
+                        <div class="grid-item" id="grid_item_4_2">
+                            <img class="proficiency_logo_small" id="speedtree_logo" src="resources/ST_Square_White.png">
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="contact_container">
+                        <a class="contact_link" id="insta_contact_link" href="https://www.instagram.com" target="_blank">
+                            <img class="contact_icon" id="insta_contact_icon" src = "resources/instagram.svg" alt="Up arrow"/>
+                        </a>
+                        <a class="contact_link" id="facebook" href="https://www.facebook.com" target="_blank">
+                            <img class="contact_icon" id="insta_contact_icon" src = "resources/facebook.svg" alt="Up arrow"/>
+                        </a>
+                        <a class="contact_link" id="youtube" href="https://www.instagram.com" target="_blank">
+                            <img class="contact_icon" id="insta_contact_icon" src = "resources/youtube.svg" alt="Up arrow"/>
+                        </a>
+                        <a class="contact_link" id="google" href="https://www.instagram.com" target="_blank">
+                            <img class="contact_icon" id="insta_contact_icon" src = "resources/google.svg" alt="Up arrow"/>
+                        </a>
+                    </div>
+            </div>
+
+            
+
+
+
+
+            
+
+            
+
+            
+        </div>
+
+
+        <div class="page full_page def_hide layout_margin" id="whiskerwood_page">
+            <!-- The video -->
+            <video muted loop id="whiskerwood_video" class="background_video">
+                <source src="resources/whiskerwood_video.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="video_description" id="whiskerwood_description">
+                <img class="angle-up-solid" src = "resources/angle-up-solid.svg" alt="Up arrow"/>
+                <h1>Whiskerwood</h1>
+                <p>A Whiskerwood egy külső nézetes kalandjáték, melyeben egy varászló cicával fedezzi fel a játékos az éppen haldokló erdőt. Az erdő gyógyulása és a cica belső küzdelmeinek párhuzama teszi a történetet, nem csak izgalmassá de elgondolkodtatóvá.</p>
+                <p>A játék Unreal Engineben készült, felhasználva a Blender, Substance Painter és After Effects programokat is.</p>
+            </div>
+        </div>
+
+
+        <div class="page full_page def_hide layout_margin" id="atlantis_page">
+            <video muted loop id="whiskerwood_video" class="background_video">
+                <source src="resources/atlantis_video.mp4" type="video/mp4">
+            </video>
+            <div class="video_description" id="whiskerwood_description">
+                <img class="angle-up-solid" src = "resources/angle-up-solid.svg" alt="Up arrow"/>
+                <h1>Atlantisz</h1>
+                <p>Az atlantisz egy rövid interaktív animáció, egy kiváncsi búvárról, aki érdekes kincsre bukkant. A befogadó kiváncsiságán műlik, hogy a főhős kinyitja a rejtéjes ládát, amire bukkant, vagy hagyja a tartalmát jótékony homályba veszni. </p>
+                <p>Az animáció Autodes Maya segítségével készült, Arnold render által.</p>
+            </div>
+        </div>
+
+
+        <div class="page full_page def_hide layout_margin" id="skull_page">
+            <video muted loop id="whiskerwood_video" class="background_video">
+                <source src="resources/skull_video.mp4" type="video/mp4">
+            </video>
+            <div class="video_description" id="whiskerwood_description">
+                <img class="angle-up-solid" src = "resources/angle-up-solid.svg" alt="Up arrow"/>
+                <h1>Skull</h1>
+                <p>A Koponya, egy 3D anyagtulajdonság kisérlet, mejben ugyanazok formán, megfigyelhetjük, hogy a különböző anyagjellemzők, hogyan befolyásolják, a 3d modell kinézetének érzetét. </p>
+                <p>Az animáció Autodes Maya segítségével készült, Arnold render által.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="page full_page def_hide layout_margin" id="flanders_page">
+            <video muted loop id="whiskerwood_video" class="background_video">
+                <source src="resources/poppy_video.mp4" type="video/mp4">
+            </video>
+            <div class="video_description" id="whiskerwood_description">
+                <img class="angle-up-solid" src = "resources/angle-up-solid.svg" alt="Up arrow"/>
+                <h1>Flanders fields</h1>
+                <p>A Flanders fields, egy valós idejű animáció, melyet a John McCrae által alkotott "In Flanders Fields" cimű mű ihletett. Az animáció egy katona utolsó perceit mutatja be, majd a halála helyét egy pipacs teszi emlékezetessé. Ahogyan a kamera távolodik, egyre inkább látható lesz a teljes mező, melyet pipacsok borítanak, ezzel utalva a háboró áldozatainak számosságára. </p>
+                <p>A játék Unreal Engineben készült, felhasználva a Blender, Substance Painter és Mixamo programokat is.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
+
